@@ -7,7 +7,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Выберете нужную функцию \n 1. Наибольшее из двух числе");
             //int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Выберете нужную функцию \n 2. Рандомный массив из 10 чисел");
+            Console.WriteLine("Выберете нужную функцию \n 2. Умножение чисел");
             //int b = int.Parse(Console.ReadLine());
             Console.WriteLine("Выберете нужную функцию \n 3. Сумма чисел");
             // int c = int.Parse(Console.ReadLine());
@@ -26,7 +26,11 @@ namespace ConsoleApp1
                     Console.WriteLine(naibol(a, b));
                     break;
                 case "2":
-                    Console.WriteLine();
+                    Console.WriteLine("Введите число x");
+                    int x = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Введите число z");
+                    int z = int.Parse(Console.ReadLine());
+                    Console.WriteLine(ymnojenie(x, z));
                     break;
                 case "+":
                     Console.WriteLine();
@@ -51,7 +55,11 @@ namespace ConsoleApp1
 
         }
 
-
+        static int ymnojenie(int x, int z)
+        {
+            Console.Write("Результат: ");
+            return x * z;
+        }
 
 
 
