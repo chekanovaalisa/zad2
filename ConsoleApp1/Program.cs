@@ -19,7 +19,11 @@ namespace ConsoleApp1
             switch (vbr)
             {
                 case "1":
-                    
+                    Console.WriteLine("Введите число a");
+                    int a = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Введите число b");
+                    int b = int.Parse(Console.ReadLine());
+                    Console.WriteLine(naibol(a, b));
                     break;
                 case "2":
                     Console.WriteLine();
@@ -32,7 +36,20 @@ namespace ConsoleApp1
                     break;
             }
         }
-       
+        static int naibol(int x, int z)
+        {
+            if (x > z)
+            {
+                Console.Write("Наибольшее число a: ");
+                return x;
+            }
+            else
+            {
+                Console.Write("Наибольшее число b: ");
+                return z;
+            }
+
+        }
 
 
 
