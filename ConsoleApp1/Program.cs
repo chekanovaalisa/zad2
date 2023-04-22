@@ -40,7 +40,11 @@ namespace ConsoleApp1
                     Console.WriteLine(pluse(e, r));
                     break;
                 case "-":
-                    Console.WriteLine();
+                    Console.WriteLine("Введите число x");
+                    int t = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Введите число z");
+                    int y = int.Parse(Console.ReadLine());
+                    Console.WriteLine(minus(t, y));
                     break;
             }
         }
@@ -75,6 +79,13 @@ namespace ConsoleApp1
             return x + z;
         }
 
+        static int minus(int x, int z)
+        {
+
+            Console.Write("Результат: ");
+
+            return x - z;
+        }
 
 
 
