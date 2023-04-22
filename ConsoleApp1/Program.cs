@@ -33,7 +33,11 @@ namespace ConsoleApp1
                     Console.WriteLine(ymnojenie(x, z));
                     break;
                 case "+":
-                    Console.WriteLine();
+                    Console.WriteLine("Введите число x");
+                    int e = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Введите число z");
+                    int r = int.Parse(Console.ReadLine());
+                    Console.WriteLine(pluse(e, r));
                     break;
                 case "-":
                     Console.WriteLine();
@@ -61,6 +65,14 @@ namespace ConsoleApp1
             Console.Write("Результат: >_< ");
 
             return x * z;
+        }
+
+        static int pluse(int x, int z)
+        {
+
+            Console.Write("Результат: ");
+
+            return x + z;
         }
 
 
