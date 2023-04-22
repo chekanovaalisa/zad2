@@ -57,7 +57,9 @@ namespace ConsoleApp1
 
         static int ymnojenie(int x, int z)
         {
+
             Console.Write("Результат: >_< ");
+
             return x * z;
         }
 
